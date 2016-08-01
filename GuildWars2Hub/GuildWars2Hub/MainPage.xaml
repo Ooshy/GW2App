@@ -2,30 +2,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GuildWars2Hub"
-             x:Class="GuildWars2Hub.MainPage"
-             BackgroundColor="Black">
+             x:Class="GuildWars2Hub.MainPage">
+  <StackLayout Padding="5" BackgroundColor="Black">
 
-  <Grid>
-    <Grid.RowDefinitions>
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-      <RowDefinition />
-    </Grid.RowDefinitions>
-    <Label Text="Guild Wars 2 Hub"
-           Grid.Row="0"
-           Grid.RowSpan="2"
-           TextColor="Lime"
-           HorizontalTextAlignment="Center"/>
-    
-    <Label Text="Blah blah blah..."
-           Grid.Row="6" />
-    
-  </Grid>  
+    <ContentView Padding="5" BackgroundColor="#AA3366ff" >
+      <Label x:Name="_Title"
+             Text="{Binding Title}"
+             TextColor="Lime"
+             FontSize="Large"
+             VerticalTextAlignment="Center"
+             HorizontalTextAlignment="Center"/>
+
+    </ContentView>
+    <ContentView Padding="5" BackgroundColor="#AA3366ff" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <ListView x:Name="_List"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  ItemsSource="{Binding ListData}"
+                  GroupDisplayBinding="{Binding ListTitle}"
+                  GroupShortNameBinding="{Binding ListShortName}"
+                  IsGroupingEnabled="false"
+                RowHeight="100">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <!--<Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition/>
+              <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition/>
+              <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+          </Grid>-->
+            <ViewCell>
+              <ContentView Padding="5">
+              <StackLayout BackgroundColor="Teal" Padding="5">
+                <Label Text="{Binding Title}" />
+                <Label Text="{Binding Subtitle}" />
+                <Label Text="{Binding TimeCounter.Current}"  FontSize="Large" HorizontalOptions="FillAndExpand"/>
+              </StackLayout>
+              </ContentView>
+            </ViewCell>
+            <!--<TextCell Text="{Binding Title}"
+                      TextColor="Yellow"
+                      Detail="{Binding Subtitle}"
+                      DetailColor="White"
+                    />-->
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ContentView>
+    <!--<Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+    </Grid>-->
+
+  </StackLayout>
 </ContentPage>
