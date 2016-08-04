@@ -66,7 +66,7 @@
                       DetailColor="White"
                     />-->
                   <Label FontSize="Large"
-                         Text="{Binding Title}"
+                         Text="{Binding Name}"
                          Grid.Row="0"
                          Grid.RowSpan="2"
                          Grid.Column="0"
@@ -74,13 +74,13 @@
                          HorizontalOptions="StartAndExpand"/>
                   <Label Grid.Row="2"
                          Grid.RowSpan="3"
-                         Grid.ColumnSpan="4" FontSize="Medium" Text="{Binding Subtitle}" />
+                         Grid.ColumnSpan="4" FontSize="Medium" Text="{Binding Description}" />
                   <Label FontSize="Large"
                          Grid.Row="0"
                          Grid.RowSpan="2"
                          Grid.Column="2"
                          HorizontalOptions="End"
-                         Grid.ColumnSpan="2" Text="{Binding TimeCounter.Current}"  />
+                         Grid.ColumnSpan="2" Text="{Binding SpawnTime}"  />
                 </Grid>
               </ContentView>
             </ViewCell>
