@@ -4,15 +4,16 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace GuildWars2Hub
 {
-    public class ListItemVM : INotifyPropertyChanged
+    public class Boss : View, INotifyPropertyChanged
     {
+        public string ImageUri { get; set; }
 
-
-        private TimeCounter _TimeCounter;
-        public TimeCounter TimeCounter
+        private TimeSpan _TimeCounter;
+        public TimeSpan SpawnTime
         {
             get
             {
@@ -23,14 +24,14 @@ namespace GuildWars2Hub
                 if (_TimeCounter != value)
                 {
                     _TimeCounter = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(TimeCounter)));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SpawnTime)));
                 }
             }
         }
 
 
         private string _Title;
-        public string Title
+        public string Name
         {
             get
             {
@@ -41,14 +42,14 @@ namespace GuildWars2Hub
                 if (_Title != value)
                 {
                     _Title = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Title)));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Name)));
                 }
             }
         }
 
 
         private string _Subtitle;
-        public string Subtitle
+        public string Description
         {
             get
             {
@@ -59,7 +60,7 @@ namespace GuildWars2Hub
                 if (_Subtitle != value)
                 {
                     _Subtitle = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Subtitle)));
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
                 }
             }
         }
