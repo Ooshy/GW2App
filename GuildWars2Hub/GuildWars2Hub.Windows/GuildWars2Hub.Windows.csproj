@@ -125,6 +125,23 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="auric.png" />
+    <Content Include="dragon.png" />
+    <Content Include="fe.png" />
+    <Content Include="golem.png" />
+    <Content Include="jormag.png" />
+    <Content Include="maw.png" />
+    <Content Include="megades.png" />
+    <Content Include="queen.png" />
+    <Content Include="sb.png" />
+    <Content Include="shatterer.png" />
+    <Content Include="taidha.png" />
+    <Content Include="tangled.png" />
+    <Content Include="tequatl.png" />
+    <Content Include="triplewurm.png" />
+    <Content Include="ulgoth.png" />
+    <Content Include="verdant.png" />
+    <Content Include="wurm.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
