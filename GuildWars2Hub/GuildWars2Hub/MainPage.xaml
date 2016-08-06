@@ -35,7 +35,7 @@
                 GroupShortNameBinding="{Binding ListShortName}"
                 IsGroupingEnabled="false"
                 
-                RowHeight="100">
+                RowHeight="200">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -45,10 +45,9 @@
                 <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}"
                    Text="Delete" IsDestructive="True" />
               </ViewCell.ContextActions>
-              <ContentView Padding="5,20">
+              <ContentView Padding="10,5">
                 <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#C5CAE9" Padding="5">
                   <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -66,21 +65,21 @@
                       DetailColor="White"
                     />-->
                   <Label FontSize="Large"
-                         Text="{Binding Title}"
+                         Text="{Binding Name}"
                          Grid.Row="0"
                          Grid.RowSpan="2"
                          Grid.Column="0"
-                         Grid.ColumnSpan="2"
+                         Grid.ColumnSpan="4"
                          HorizontalOptions="StartAndExpand"/>
-                  <Label Grid.Row="2"
+                  <Label Grid.Row="1"
                          Grid.RowSpan="3"
-                         Grid.ColumnSpan="4" FontSize="Medium" Text="{Binding Subtitle}" />
-                  <Label FontSize="Large"
+                         Grid.ColumnSpan="4" FontSize="Small" Text="{Binding Description}" />
+                  <!--<Label FontSize="Large"
                          Grid.Row="0"
                          Grid.RowSpan="2"
                          Grid.Column="2"
                          HorizontalOptions="End"
-                         Grid.ColumnSpan="2" Text="{Binding TimeCounter.Current}"  />
+                         Grid.ColumnSpan="2" Text="{Binding SpawnTime}"  />-->
                 </Grid>
               </ContentView>
             </ViewCell>
