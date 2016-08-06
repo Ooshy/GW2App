@@ -10,7 +10,7 @@ namespace GuildWars2Hub
 {
     public class Boss : View, INotifyPropertyChanged
     {
-        public string ImageUri { get; set; }
+        public ImageSource Image { get; set; }
 
         private TimeSpan _TimeCounter;
         public TimeSpan SpawnTime
