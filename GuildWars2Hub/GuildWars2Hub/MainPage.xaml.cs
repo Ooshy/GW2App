@@ -18,6 +18,8 @@ namespace GuildWars2Hub
 
             _List.ChildAdded += _List_ChildAdded;
 
+            _List.ItemTapped += _List_ItemTapped;
+
             //Task.Run(async () =>
             //{
             //    for (;;)
@@ -32,9 +34,15 @@ namespace GuildWars2Hub
             //});
         }
 
+        private void _List_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            // throw new NotImplementedException();
+        }
+
         private void _List_ChildAdded(object sender, ElementEventArgs e)
         {
-            
+            var x = 10;
+
         }
 
         public void OnMore(object sender, EventArgs e)

@@ -66,132 +66,162 @@ namespace GuildWars2Hub
         {
             InitializeComponent();
 
+            var events = new ObservableCollection<Boss>
+            {
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(0, 0, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(0, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(0, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(0, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(0, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(1, 0, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage, new TimeSpan(1, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(1, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(1, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(1, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(2, 0, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(2, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(2, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(2, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(2, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(3, 0, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(3, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(3, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(3, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(3, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(4, 0, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(4, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(4, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(4, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(4, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(5, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(5, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(5, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(5, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(6, 0, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(6, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(6, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(6, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(6, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(3, 0, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(7, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(7, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(7, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(7, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(8, 0, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(8, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(8, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(8, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(8, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(9, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(9, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(9, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(9, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(10, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(10, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(10, 30, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(10, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(10, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(11, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(11, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(11, 30, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(11, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(11, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(12, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(12, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(12, 30, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(12, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(12, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(13, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(13, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(13, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(13, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(14, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(14, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(14, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(14, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(15, 0, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(15, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(15, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(15, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(15, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(16, 0, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(16, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(16, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(16, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(16, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(17, 0, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(17, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(17, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(17, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(17, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(18, 0, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(18, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(18, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(18, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(18, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(19, 0, 0)),
+                CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(19, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(19, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(19, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(19, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(20, 0, 0)),
+                CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(20, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(20, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(20, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(20, 45, 0)),
+                CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(21, 0, 0)),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(21, 15, 0)),
+                CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(21, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(21, 45, 0)),
+                CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(22, 0, 0)),
+                CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(22, 15, 0)),
+                CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(22, 30, 0)),
+                CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(22, 45, 0)),
+                CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(23, 0, 0)),
+                CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(23, 0 ,0 )),
+                CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(23, 15, 0)),
+                CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(23, 30, 0)),
+                CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(23, 45, 0))
+            };
+
+            events.CollectionChanged += Events_CollectionChanged;
+
+            var eventEnumerator = events.GetEnumerator();
+
+            var currentTime = DateTime.UtcNow;
+            while (true)
+            {
+                if (!eventEnumerator.MoveNext())
+                    return;
+
+                var @event = eventEnumerator.Current;
+                if (@event.SpawnTime < currentTime.TimeOfDay - TimeSpan.FromMinutes(15))
+                {
+                    var expiredEvent = @events.First();
+                    events.Remove(expiredEvent);
+                    events.Add(expiredEvent);
+
+                    eventEnumerator = events.GetEnumerator();
+                }
+                else
+                    break;
+            }
+
             var viewModel = new
             {
                 Title = "Guild Wars 2 Hub",
-                ListData = new ObservableCollection<Boss>
-                {
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(0, 0, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(0, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(0, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(0, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(0, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(1, 0, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage, new TimeSpan(1, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(1, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(1, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(1, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(2, 0, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(2, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(2, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(2, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(2, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(3, 0, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(3, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(3, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(3, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(3, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(4, 0, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(4, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(4, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(4, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(4, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(5, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(5, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(5, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(5, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(6, 0, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(6, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(6, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(6, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(6, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(3, 0, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(7, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(7, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(7, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(7, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(8, 0, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(8, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(8, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(8, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(8, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(9, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(9, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(9, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(9, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(10, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(10, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(10, 30, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(10, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(10, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(11, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(11, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(11, 30, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(11, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(11, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(12, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(12, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(12, 30, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(12, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(12, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(13, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(13, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(13, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(13, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(14, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(14, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(14, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(14, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(15, 0, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(15, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(15, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(15, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(15, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(16, 0, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(16, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(16, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(16, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(16, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(17, 0, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(17, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(17, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(17, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(17, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(18, 0, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(18, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(18, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(18, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(18, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(19, 0, 0)),
-                    CreateBoss(TequatlTheSunlessName, TequatlTheSunlessDescription, TequatlTheSunlessImage,  new TimeSpan(19, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(19, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(19, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(19, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(20, 0, 0)),
-                    CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmDescription, EvolvedJungleWurmImage,  new TimeSpan(20, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(20, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(20, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(20, 45, 0)),
-                    CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(21, 0, 0)),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(21, 15, 0)),
-                    CreateBoss(MegadestroyerName, MegadestroyerDescription, MegadestroyerImage,  new TimeSpan(21, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(21, 45, 0)),
-                    CreateBoss(TheShattererName, TheShattererDescription, TheShattererImage,  new TimeSpan(22, 0, 0)),
-                    CreateBoss(SvanirShamanChiefName, SvanirShamanChiefDescription, SvanirShamanChiefImage, new TimeSpan(22, 15, 0)),
-                    CreateBoss(ModniirUlgothName, ModniirUlgothDescription, ModniirUlgothImage,  new TimeSpan(22, 30, 0)),
-                    CreateBoss(FireElementalName, FireElementalDescription, FireElementalImage,  new TimeSpan(22, 45, 0)),
-                    CreateBoss(GolemMarkIIName, GolemMarkIIDescription, GolemMarkIIImage,  new TimeSpan(23, 0, 0)),
-                    CreateBoss(KarkaQueenName, KarkaQueenDescription, KarkaQueenImage,  new TimeSpan(23, 0 ,0 )),
-                    CreateBoss(GreatJungleWurmName, GreatJungleWurmDescription, GreatJungleWurmImage,  new TimeSpan(23, 15, 0)),
-                    CreateBoss(ClawOfJormagName, ClawOfJormagDescription, ClawOfJormagImage,  new TimeSpan(23, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothDescription, ShadowBehemothImage, new TimeSpan(23, 45, 0))
-                },
+                ListData = events,
                 ListTitle = "My List",
                 ListShortName = "List"
             };
 
 
             MainPage = new MainPage() { BindingContext = viewModel };
+        }
+
+        private void Events_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            
         }
 
         private static Boss CreateBoss(string name, string description, ImageSource imageSource, TimeSpan spawnTime)
@@ -205,7 +235,7 @@ namespace GuildWars2Hub
             };
         }
 
-        
+
 
         protected override void OnStart()
         {
