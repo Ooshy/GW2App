@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-
+// stupid comment for version control to update
 namespace GuildWars2Hub
 {
     public partial class App : Application

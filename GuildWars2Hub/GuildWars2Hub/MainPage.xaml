@@ -35,7 +35,7 @@
                 GroupShortNameBinding="{Binding ListShortName}"
                 IsGroupingEnabled="false"
                 
-                RowHeight="75">
+                RowHeight="40">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -62,12 +62,13 @@
                       DetailColor="White"
                     />-->
                   <Image Source="{Binding Image}"
-                         Grid.ColumnSpan="2"/>
+                         VerticalOptions="Center"
+                         Grid.ColumnSpan="1"/>
                   <Label FontSize="Large"
                          Text="{Binding Name}"
                          Grid.RowSpan="2"
-                         Grid.Column="2"
-                         Grid.ColumnSpan="2"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="3"
                          HorizontalOptions="StartAndExpand"/>
                   <!--<Label Grid.Row="1"
                          Grid.RowSpan="3"
