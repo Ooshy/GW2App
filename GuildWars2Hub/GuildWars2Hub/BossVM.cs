@@ -8,10 +8,34 @@ using Xamarin.Forms;
 
 namespace GuildWars2Hub
 {
-    public class Boss : View, INotifyPropertyChanged
+    public class Boss : StackLayout, INotifyPropertyChanged
     {
-        public ImageSource Image { get; set; }
 
+
+
+        public new Color BackgroundColor
+        {
+            get
+            {
+                return base.BackgroundColor;
+            }
+            set
+            {
+                base.BackgroundColor = value;
+            }
+        }
+
+
+
+
+        public Boss()
+        {
+            VerticalOptions = LayoutOptions.FillAndExpand;
+            HorizontalOptions = LayoutOptions.FillAndExpand;
+        }
+
+        public ImageSource Image { get; set; }
+        public bool Active { get; set; }
         private TimeSpan _TimeCounter;
         public TimeSpan SpawnTime
         {
@@ -48,19 +72,19 @@ namespace GuildWars2Hub
         }
 
 
-        private string _Subtitle;
-        public string Description
+        private string _EventDescription;
+        public string EventDescription
         {
             get
             {
-                return _Subtitle;
+                return _EventDescription;
             }
             set
             {
-                if (_Subtitle != value)
+                if (_EventDescription != value)
                 {
-                    _Subtitle = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
+                    _EventDescription = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(EventDescription)));
                 }
             }
         }
