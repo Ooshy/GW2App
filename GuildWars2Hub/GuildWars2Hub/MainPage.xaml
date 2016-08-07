@@ -34,8 +34,8 @@
                 GroupDisplayBinding="{Binding ListTitle}"
                 GroupShortNameBinding="{Binding ListShortName}"
                 IsGroupingEnabled="false"
-                
-                RowHeight="50">
+                HasUnevenRows="True"
+                >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -46,9 +46,9 @@
                    Text="Delete" IsDestructive="True" />
               </ViewCell.ContextActions>
               <ContentView Padding="10,5">
-                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#C5CAE9" Padding="5">
+                <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#C5CAE9" Padding="5">
                   <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                   </Grid.RowDefinitions>
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -78,6 +78,7 @@
                          Grid.ColumnSpan="1"/>
                   <Label FontSize="Large"
                          Text="{Binding Name}"
+                         VerticalOptions="Center"
                          Grid.Column="1"
                          Grid.ColumnSpan="3"
                          HorizontalOptions="StartAndExpand"/>
