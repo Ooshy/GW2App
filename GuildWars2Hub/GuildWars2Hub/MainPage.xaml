@@ -3,18 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GuildWars2Hub"
              x:Class="GuildWars2Hub.MainPage"
-             BackgroundColor="#303F9F">
+             BackgroundColor="#FFE60000">
   <ContentPage.Resources>
     <ResourceDictionary>
       <Style TargetType="Label">
         <Setter Property="TextColor" Value="#212121" />
       </Style>
       <Style TargetType="ContentView">
-        <Setter Property="BackgroundColor" Value="#303F9F"/>
+        <Setter Property="BackgroundColor" Value="#55808080"/>
       </Style>
     </ResourceDictionary>
   </ContentPage.Resources>
-  <StackLayout >
+  <StackLayout Padding="0">
     <ContentView VerticalOptions="Fill">
       <Label x:Name="_Title"
              Text="{Binding Title}"
@@ -34,8 +34,7 @@
                 GroupDisplayBinding="{Binding ListTitle}"
                 GroupShortNameBinding="{Binding ListShortName}"
                 IsGroupingEnabled="false"
-                HasUnevenRows="True"
-                >
+                HasUnevenRows="True">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -46,7 +45,7 @@
                    Text="Delete" IsDestructive="True" />
               </ViewCell.ContextActions>
               <ContentView Padding="10,5">
-                <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#C5CAE9" Padding="5">
+                <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#44FFFFFF" Padding="5">
                   <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                   </Grid.RowDefinitions>
@@ -65,7 +64,7 @@
                             <Setter Property="BackgroundColor" Value="Yellow" />
                           </DataTrigger>
                           <DataTrigger TargetType="Grid" Binding="{Binding Active}" Value="False">
-                            <Setter Property="BackgroundColor" Value="#C5CAE9" />
+                            <Setter Property="BackgroundColor" Value="#44FFFFFF" />
                           </DataTrigger>
                         </Style.Triggers>
                       </Style>
