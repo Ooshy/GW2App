@@ -130,17 +130,39 @@
     <Content Include="fe.png" />
     <Content Include="golem.png" />
     <Content Include="jormag.png" />
-    <Content Include="maw.png" />
-    <Content Include="megades.png" />
-    <Content Include="queen.png" />
-    <Content Include="sb.png" />
-    <Content Include="shatterer.png" />
-    <Content Include="taidha.png" />
-    <Content Include="tangled.png" />
-    <Content Include="tequatl.png" />
-    <Content Include="triplewurm.png" />
-    <Content Include="ulgoth.png" />
-    <Content Include="verdant.png" />
+    <Content Include="maw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="megades.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="queen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shatterer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="taidha.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tangled.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tequatl.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="triplewurm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ulgoth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="verdant.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wurm.png" />
   </ItemGroup>
   <ItemGroup>

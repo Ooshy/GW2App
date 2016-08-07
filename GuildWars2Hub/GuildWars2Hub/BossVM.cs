@@ -10,24 +10,6 @@ namespace GuildWars2Hub
 {
     public class Boss : StackLayout, INotifyPropertyChanged
     {
-
-
-
-        public new Color BackgroundColor
-        {
-            get
-            {
-                return base.BackgroundColor;
-            }
-            set
-            {
-                base.BackgroundColor = value;
-            }
-        }
-
-
-
-
         public Boss()
         {
             VerticalOptions = LayoutOptions.FillAndExpand;
