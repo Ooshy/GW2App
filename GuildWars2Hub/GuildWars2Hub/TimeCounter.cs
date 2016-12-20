@@ -9,7 +9,6 @@ namespace GuildWars2Hub
 {
     public class TimeCounter : INotifyPropertyChanged
     {
-        private static TimeSpan _RefreshInterval = TimeSpan.FromSeconds(1);
         private TimeSpan _InternalTime;
 
         private readonly TimeSpan _RespawnInterval;
@@ -31,22 +30,18 @@ namespace GuildWars2Hub
             _InternalTime = _InitialTime;
 
             Current = FormattedInternalTime();
-            Task.Run(async () =>
-            {
-                for (;;)
-                {
-                    await Task.Delay(_RefreshInterval);
+        }
 
-                    if (_RefreshInterval > _InternalTime)
-                    {
-                        RestartTimer();
-                    }
-                    else
-                    {
-                        TimerTick();
-                    }
-                }
-            });
+        public void Update(TimeSpan refreshInterval)
+        {
+            if (refreshInterval > _InternalTime)
+            {
+                RestartTimer();
+            }
+            else
+            {
+                TimerTick(refreshInterval);
+            }
         }
 
         private bool EventIsExpired()
@@ -65,9 +60,9 @@ namespace GuildWars2Hub
             Current = FormattedInternalTime();
         }
 
-        private void TimerTick()
+        private void TimerTick(TimeSpan refreshInterval)
         {
-            _InternalTime -= _RefreshInterval;
+            _InternalTime -= refreshInterval;
             Current = FormattedInternalTime();
         }
 

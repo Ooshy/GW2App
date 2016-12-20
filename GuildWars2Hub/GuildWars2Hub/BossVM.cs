@@ -18,7 +18,23 @@ namespace GuildWars2Hub
 
         public ImageSource Image { get; set; }
 
-        public bool Active { get; set; }
+
+        public bool Active
+        {
+            get; private set;
+        }
+
+        public void Update()
+        {
+            if (Active != IsActive)
+            {
+                Active = IsActive;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Active)));
+            }
+        }
+
+        private bool IsActive => Counter.Current == "Active";
+
         private TimeSpan _SpawnTime;
         public TimeSpan SpawnTime
         {
@@ -53,7 +69,7 @@ namespace GuildWars2Hub
             }
         }
 
-        
+
 
         private string _Title;
         public string Name
