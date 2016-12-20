@@ -87,21 +87,20 @@
                   <!--<Label Grid.Row="1"
                          Grid.RowSpan="3"
                          Grid.ColumnSpan="4" FontSize="Small" Text="{Binding EventDescription}" />-->
-                  <Frame OutlineColor="Blue"
-                         BackgroundColor="Blue"
-                         VerticalOptions="CenterAndExpand"
-                         HorizontalOptions="Center"
-                         Padding="25"
-                         Grid.Row="0"
-                         Grid.Column="1"
-                         Grid.ColumnSpan="3">
-                    <Label FontSize="Large"
-                           HorizontalOptions="End"
-                           Text="{Binding Counter.Current}" />  
-                  </Frame>
                   
-
-
+                    <Frame BackgroundColor="Red"
+                           Padding="1"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="3">
+                      <Frame>
+                        <Label FontSize="Large"
+                          HorizontalOptions="End"
+                          Text="{Binding Counter.Current}" />
+                      </Frame>
+                      
+                    </Frame>
+                  
                 </Grid>
               </ContentView>
             </ViewCell>
