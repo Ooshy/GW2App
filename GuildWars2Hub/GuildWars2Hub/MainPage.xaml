@@ -92,7 +92,7 @@
                          Grid.Column="1"
                          Grid.ColumnSpan="3"
                          HorizontalOptions="End"
-                         Text="{Binding SpawnTime}" />
+                         Text="{Binding Counter.Current}" />
                 </Grid>
               </ContentView>
             </ViewCell>

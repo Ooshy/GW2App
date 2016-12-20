@@ -17,24 +17,43 @@ namespace GuildWars2Hub
         }
 
         public ImageSource Image { get; set; }
+
         public bool Active { get; set; }
-        private TimeSpan _TimeCounter;
+        private TimeSpan _SpawnTime;
         public TimeSpan SpawnTime
         {
             get
             {
-                return _TimeCounter;
+                return _SpawnTime;
             }
             set
             {
-                if (_TimeCounter != value)
+                if (_SpawnTime != value)
                 {
-                    _TimeCounter = value;
+                    _SpawnTime = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SpawnTime)));
                 }
             }
         }
 
+        private TimeCounter _Counter;
+        public TimeCounter Counter
+        {
+            get
+            {
+                return _Counter;
+            }
+            set
+            {
+                if (_Counter != value)
+                {
+                    _Counter = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Counter)));
+                }
+            }
+        }
+
+        
 
         private string _Title;
         public string Name

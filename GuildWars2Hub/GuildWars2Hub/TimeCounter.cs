@@ -9,7 +9,7 @@ namespace GuildWars2Hub
 {
     public class TimeCounter : INotifyPropertyChanged
     {
-        private TimeSpan _RefreshInterval = TimeSpan.FromSeconds(1);
+        private static TimeSpan _RefreshInterval = TimeSpan.FromSeconds(1);
         private TimeSpan _InternalTime;
 
         private readonly TimeSpan _RespawnInterval;
@@ -21,9 +21,16 @@ namespace GuildWars2Hub
             if ((_RespawnInterval = respawnInterval) == null)
                 throw new ArgumentNullException("Respawn interval is null.");
 
+            if (EventIsActive())
+            {
+                // do nothing
+            }
+            else if (EventIsExpired())
+                _InitialTime += TimeSpan.FromHours(24);
+
             _InternalTime = _InitialTime;
 
-            Current = _InternalTime.ToString();
+            Current = FormattedInternalTime();
             Task.Run(async () =>
             {
                 for (;;)
@@ -42,16 +49,31 @@ namespace GuildWars2Hub
             });
         }
 
+        private bool EventIsExpired()
+        {
+            return _InitialTime.Ticks < 0 && !EventIsActive();
+        }
+
+        private bool EventIsActive()
+        {
+            return _InitialTime.Hours == 0 && _InitialTime.Minutes > -15 && _InitialTime.Minutes <= 0;
+        }
+
         private void RestartTimer()
         {
             _InternalTime = _RespawnInterval;
-            Current = _InternalTime.ToString();
+            Current = FormattedInternalTime();
         }
 
         private void TimerTick()
         {
             _InternalTime -= _RefreshInterval;
-            Current = _InternalTime.ToString();
+            Current = FormattedInternalTime();
+        }
+
+        private string FormattedInternalTime()
+        {
+            return _InternalTime.ToString(@"hh\:mm\:ss");
         }
 
         private string _Current;
@@ -59,7 +81,7 @@ namespace GuildWars2Hub
         {
             get
             {
-                return _Current;
+                return EventIsActive() ? "Active" : _Current;
             }
             set
             {

@@ -86,7 +86,7 @@ namespace GuildWars2Hub
 
             public App()
             {
-                InitializeComponent();
+                //InitializeComponent();
 
                 // In game events using UTC time
                 var events = new ObservableCollection<Boss>
@@ -330,7 +330,6 @@ namespace GuildWars2Hub
                     @event.Active = true;
                     break;
                 }
-                    
             }
 
             var viewModel = new
@@ -357,7 +356,8 @@ namespace GuildWars2Hub
                 Name = name,
                 EventDescription = eventDescription,
                 Image = imageSource,
-                SpawnTime = spawnTime
+                SpawnTime = spawnTime,
+                Counter = new TimeCounter(spawnTime - (DateTime.UtcNow - new DateTime(DateTime.UtcNow.Year, DateTime.UtcNow.Month, DateTime.UtcNow.Day)), new TimeSpan(24, 0, 0))
             };
         }
 
