@@ -87,12 +87,20 @@
                   <!--<Label Grid.Row="1"
                          Grid.RowSpan="3"
                          Grid.ColumnSpan="4" FontSize="Small" Text="{Binding EventDescription}" />-->
-                  <Label FontSize="Large"
-                         Grid.Row="0"
-                         Grid.Column="1"
-                         Grid.ColumnSpan="3"
-                         HorizontalOptions="End"
-                         Text="{Binding Counter.Current}" />
+                  
+                    <Frame BackgroundColor="Red"
+                           Padding="1"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="3">
+                      <Frame>
+                        <Label FontSize="Large"
+                          HorizontalOptions="End"
+                          Text="{Binding Counter.Current}" />
+                      </Frame>
+                      
+                    </Frame>
+                  
                 </Grid>
               </ContentView>
             </ViewCell>
