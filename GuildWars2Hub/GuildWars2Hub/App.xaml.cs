@@ -98,7 +98,7 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(0, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(0, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(0, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(0, 45, 0)),
+                    
                     
                     // 1AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(1, 0, 0)),
@@ -108,6 +108,7 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(1, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(1, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(1, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(1, 45, 0)),
                     
                     // 2 AM
                     CreateBoss(GolemMarkIIName, GolemMarkIIEventDescription, GolemMarkIIImage,  new TimeSpan(2, 0, 0)),
@@ -116,7 +117,6 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(2, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(2, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(2, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(2, 45, 0)),
 
                     // 3 AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(3, 0, 0)),
@@ -126,6 +126,7 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(3, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(3, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(3, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(3, 45, 0)),
                     
                     // 4 AM
                     CreateBoss(TheShattererName, TheShattererEventDescription, TheShattererImage,  new TimeSpan(4, 0, 0)),
@@ -134,7 +135,6 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(4, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(4, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(4, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(4, 45, 0)),
 
                     // 5 AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(5, 0, 0)),
@@ -143,6 +143,7 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(5, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(5, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(5, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(5, 45, 0)),
                     
                     // 6 AM
                     CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonEventDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(6, 0, 0)),
@@ -151,7 +152,6 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(6, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(6, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(6, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(6, 45, 0)),
 
                     // 7 AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(7, 0, 0)),
@@ -161,6 +161,7 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(7, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(7, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(7, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(7, 45, 0)),
                     
                     // 8 AM
                     CreateBoss(GolemMarkIIName, GolemMarkIIEventDescription, GolemMarkIIImage,  new TimeSpan(8, 0, 0)),
@@ -169,7 +170,6 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(8, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(8, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(8, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(8, 45, 0)),
 
                     // 9 AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(9, 0, 0)),
@@ -178,6 +178,7 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(9, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(9, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(9, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(9, 45, 0)),
                     
                     // 10 AM
                     CreateBoss(TheShattererName, TheShattererEventDescription, TheShattererImage,  new TimeSpan(10, 0, 0)),
@@ -186,7 +187,6 @@ namespace GuildWars2Hub
                     CreateBoss(KarkaQueenName, KarkaQueenEventDescription, KarkaQueenImage,  new TimeSpan(10, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(10, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(10, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(10, 45, 0)),
 
                     // 11 AM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(11, 0, 0)),
@@ -196,6 +196,7 @@ namespace GuildWars2Hub
                     CreateBoss(TequatlTheSunlessName, TequatlTheSunlessEventDescription, TequatlTheSunlessImage,  new TimeSpan(11, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(11, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(11, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(11, 45, 0)),
                     
                     // 12 PM
                     CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonEventDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(12, 0, 0)),
@@ -204,7 +205,6 @@ namespace GuildWars2Hub
                     CreateBoss(EvolvedJungleWurmName, EvolvedJungleWurmEventDescription, EvolvedJungleWurmImage,  new TimeSpan(12, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(12, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(12, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(12, 45, 0)),
 
                     // 1 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(13, 0, 0)),
@@ -213,6 +213,7 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(13, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(13, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(13, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(13, 45, 0)),
                     
                     // 2 PM
                     CreateBoss(GolemMarkIIName, GolemMarkIIEventDescription, GolemMarkIIImage,  new TimeSpan(14, 0, 0)),
@@ -220,7 +221,6 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(14, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(14, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(14, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(14, 45, 0)),
 
                     // 3 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(15, 0, 0)),
@@ -230,6 +230,7 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(15, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(15, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(15, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(15, 45, 0)),
 
                     // 4 PM
                     CreateBoss(TheShattererName, TheShattererEventDescription, TheShattererImage,  new TimeSpan(16, 0, 0)),
@@ -238,7 +239,6 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(16, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(16, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(16, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(16, 45, 0)),
 
                     // 5 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(17, 0, 0)),
@@ -248,6 +248,7 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(17, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(17, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(17, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(17, 45, 0)),
                     
                     // 6 PM
                     CreateBoss(AdmiralTaidhaCovingtonName, AdmiralTaidhaCovingtonEventDescription, AdmiralTaidhaCovingtonImage,  new TimeSpan(18, 0, 0)),
@@ -256,7 +257,6 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(18, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(18, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(18, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(18, 45, 0)),
 
                     // 7 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(19, 0, 0)),
@@ -266,6 +266,7 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(19, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(19, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(19, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(19, 45, 0)),
 
                     // 8 PM
                     CreateBoss(GolemMarkIIName, GolemMarkIIEventDescription, GolemMarkIIImage,  new TimeSpan(20, 0, 0)),
@@ -274,7 +275,6 @@ namespace GuildWars2Hub
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(20, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(20, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(20, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(20, 45, 0)),
 
                     // 9 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(21, 0, 0)),
@@ -283,6 +283,7 @@ namespace GuildWars2Hub
                     CreateBoss(MegadestroyerName, MegadestroyerEventDescription, MegadestroyerImage,  new TimeSpan(21, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(21, 30, 0)),
                     CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(21, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(21, 45, 0)),
                     
                     // 10 PM
                     CreateBoss(TheShattererName, TheShattererEventDescription, TheShattererImage,  new TimeSpan(22, 0, 0)),
@@ -290,7 +291,6 @@ namespace GuildWars2Hub
                     CreateBoss(ModniirUlgothName, ModniirUlgothEventDescription, ModniirUlgothImage,  new TimeSpan(22, 30, 0)),
                     CreateBoss(TangledDepthsName, TangledDepthsEventDescription, TangledDepthsImage, new TimeSpan(22, 30, 0)),
                     CreateBoss(FireElementalName, FireElementalEventDescription, FireElementalImage,  new TimeSpan(22, 45, 0)),
-                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(22, 45, 0)),
 
                     // 11 PM
                     CreateBoss(AuricBasinName, AuricBasinEventDescription, AuricBasinImage, new TimeSpan(23, 0, 0)),
@@ -299,8 +299,9 @@ namespace GuildWars2Hub
                     CreateBoss(GreatJungleWurmName, GreatJungleWurmEventDescription, GreatJungleWurmImage,  new TimeSpan(23, 15, 0)),
                     CreateBoss(ClawOfJormagName, ClawOfJormagEventDescription, ClawOfJormagImage,  new TimeSpan(23, 30, 0)),
                     CreateBoss(DragonsStandName, DragonsStandEventDescription, DragonsStandImage, new TimeSpan(23, 30, 0)),
-                    CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(23, 45, 0))
-                    
+                    CreateBoss(ShadowBehemothName, ShadowBehemothEventDescription, ShadowBehemothImage, new TimeSpan(23, 45, 0)),
+                    CreateBoss(VerdantBrinkName, VerdantBrinkEventDescription, VerdantBrinkImage, new TimeSpan(23, 45, 0)),
+
                 };
 
             events.CollectionChanged += Events_CollectionChanged;
